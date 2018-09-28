@@ -1,0 +1,31 @@
+/* 1) declarar variables en la raiz para usarla en todo el css*/
+:root{
+  --blanco:#FFF;     /* con --  indico que es una variable */
+  --negro:#000;
+  --naranja:#f90;
+}
+
+*{
+    margin: 0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+  font-family:arial;
+  background-image: url(images/pattern.jpg)
+}
+
+.cabecera{
+    margin:auto;
+    max-width: 1000px;
+}
+
+.contenido{
+
+    margin:auto;
+    max-width: 1000px;
+    /* usar la variable -- se llama con la funcion var()*/
+    background-color: var(--blanco);
+
+}
