@@ -3,6 +3,7 @@
   --blanco:#FFF;     /* con --  indico que es una variable */
   --negro:#000;
   --naranja:#f90;
+  --gris:#333;
 }
 
 *{
@@ -19,13 +20,145 @@ body{
 .cabecera{
     margin:auto;
     max-width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    margin-top: 8px;
+    margin-bottom: 15px;
+    
 }
 
 .contenido{
 
     margin:auto;
+    /*padding:10px;*/
     max-width: 1000px;
-    /* usar la variable -- se llama con la funcion var()*/
+      /* usar la variable -- se llama con la funcion var()*/
     background-color: var(--blanco);
+    border-radius:8px 8px 0 0;
 
 }
+.cabecera a{
+    /*margin:auto; */
+    max-width: 1000px;
+        
+}
+
+.cabecera h1{
+  color: var(--naranja);
+}
+
+/*botonera -- navegacion --*/
+.nav-botonera{
+     
+    background-color: var(--naranja);
+    padding: 10px 40px;  /* primer valor arriba y abajo; segundo valor --costado izq y der --*/
+    border-radius:8px 8px 0 0;
+    margin-bottom: 30px;
+        
+   }
+
+.nav-lista{
+    list-style-type: none;  /*se sacan los puntitos de la lista */
+    display:flex;  /*flex se aplica al padre */
+    
+ }
+
+ .nav-lista-item{
+    padding-left: 20px; 
+       
+}
+
+.nav-lista a{
+    font-family:arial;
+    text-decoration:none;
+    font-weight: normal;
+    padding:7px 12px;
+    border-right: 1px solid var(--blanco);
+    display:block;  /* para que se pueda respetar el padding  -- que no se anule con el font */
+    
+}
+
+a.nav-lista a:hover{
+    text-decoration:underline;
+}
+
+/*carrousel */
+.slider{
+text-align: center;
+margin-bottom: 50px;
+}
+
+/* zonas izquierda y derecha */
+.zona{
+ background-color:pink;
+ display:flex;  /* siempre al elemento padre */
+}
+
+.izquierda{
+  /*  background-color:red;*/
+    flex-grow:1;   /* que ocupen todo el lugar */
+    margin-right: 32px;
+    margin-left: 10px;
+}
+
+.derecha{
+    background-color:skyblue;
+    flex-grow:1;
+    width:70%;
+    display:grid;   /* se define en el elemento padre */
+    grid-template-columns: 1fr 1fr;  /* fr --fragment  */
+    grid-gap: 20px ;  /* agrega espacios de separacion */
+}
+
+.tituloMenu{
+  margin-left:25px;
+  margin-bottom:10px;
+}
+
+.izq-lista-item{
+    /*text-decoration:none;*/
+    font-weight: Normal;
+    padding:33px;
+    
+}
+
+.izq-lista-item{
+    /*text-decoration:none;*/
+    list-style-type: none;
+    font-weight: Normal;
+    padding:7px 12px;
+    
+}
+
+.izq-lista-item a{
+    border-bottom: 1px dashed var(--gris);
+    color:var(--negro);
+    text-decoration:none;
+    display:block;
+    padding:4px 0;
+}
+
+.izq-lista-item a:hover{
+    text-decoration:underline;
+} 
+
+/* zona derecha */
+/* usar grilla */
+ .producto{
+
+    float:left;
+    
+ }
+
+.producto p{
+  float:right;
+  width:50%;
+}
+
+
+
+ .producto img{
+    float:left;
+    width:50%;}
+ }

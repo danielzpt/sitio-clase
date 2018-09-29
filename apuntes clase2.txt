@@ -1,0 +1,17 @@
+ver elementos de linea  .. elementos de bloque
+
+
+agregar margenes de seccion.
+Siempre intentar tener el mismo criterio (bottom / top) 
+porque a futuro con las paginas distintas de la HOME trae problemas.
+
+Sitios 
+bem cssom
+
+css guidelines
+
+
+GRID
+Juego tipo flexbox  llamado GRID  GARDEN
+
+grid by example

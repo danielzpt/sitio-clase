@@ -2,3 +2,196 @@ validador de documentos
 w3c validator
 
 Netlify 
+
+
+
+github
+
+
+AutoCAD@DESKTOP-93QLT8Q MINGW64 /d/Curso Webmaster/Practica
+$ ls
+3alas.jpg  apuntes.txt  images/  index.html  Site.html
+
+AutoCAD@DESKTOP-93QLT8Q MINGW64 /d/Curso Webmaster/Practica
+$ git init
+Initialized empty Git repository in D:/Curso Webmaster/Practica/.git/
+
+AutoCAD@DESKTOP-93QLT8Q MINGW64 /d/Curso Webmaster/Practica (master)
+$ git remote add origin https://github.com/danielzpt/sitio-clase.git
+
+AutoCAD@DESKTOP-93QLT8Q MINGW64 /d/Curso Webmaster/Practica (master)
+$ git config user.name "danielzpt"
+
+AutoCAD@DESKTOP-93QLT8Q MINGW64 /d/Curso Webmaster/Practica (master)
+$ git config user.email "danielzpt@gmail.com"
+
+AutoCAD@DESKTOP-93QLT8Q MINGW64 /d/Curso Webmaster/Practica (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        3alas.jpg
+        Site.html
+        apuntes.txt
+        images/
+        index.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+AutoCAD@DESKTOP-93QLT8Q MINGW64 /d/Curso Webmaster/Practica (master)
+$ git add .
+warning: LF will be replaced by CRLF in index.html.
+The file will have its original line endings in your working directory.
+
+AutoCAD@DESKTOP-93QLT8Q MINGW64 /d/Curso Webmaster/Practica (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   3alas.jpg
+        new file:   Site.html
+        new file:   apuntes.txt
+        new file:   images/lamparas/lampara1.jpg
+        new file:   images/logo_3alas.png
+        new file:   images/newsletter_bg.jpg
+        new file:   images/pattern.jpg
+        new file:   images/slide/1.jpg
+        new file:   images/slide/2.jpg
+        new file:   images/slide/3.jpg
+        new file:   images/slide/4.jpg
+        new file:   images/slide/5.jpg
+        new file:   images/slide/6.jpg
+        new file:   images/slide/7.jpg
+        new file:   images/sobre.png
+        new file:   index.html
+
+
+AutoCAD@DESKTOP-93QLT8Q MINGW64 /d/Curso Webmaster/Practica (master)
+$ git commit -m "initial commit"
+[master (root-commit) 8a2a357] initial commit
+ 16 files changed, 1756 insertions(+)
+ create mode 100644 3alas.jpg
+ create mode 100644 Site.html
+ create mode 100644 apuntes.txt
+ create mode 100644 images/lamparas/lampara1.jpg
+ create mode 100644 images/logo_3alas.png
+ create mode 100644 images/newsletter_bg.jpg
+ create mode 100644 images/pattern.jpg
+ create mode 100644 images/slide/1.jpg
+ create mode 100644 images/slide/2.jpg
+ create mode 100644 images/slide/3.jpg
+ create mode 100644 images/slide/4.jpg
+ create mode 100644 images/slide/5.jpg
+ create mode 100644 images/slide/6.jpg
+ create mode 100644 images/slide/7.jpg
+ create mode 100644 images/sobre.png
+ create mode 100644 index.html
+
+AutoCAD@DESKTOP-93QLT8Q MINGW64 /d/Curso Webmaster/Practica (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+AutoCAD@DESKTOP-93QLT8Q MINGW64 /d/Curso Webmaster/Practica (master)
+$ git push -u origin master
+Logon failed, use ctrl+c to cancel basic credential prompt.
+Username for 'https://github.com': danielzpt@gmail.com
+zap10863remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/danielzpt/sitio-clase.git/'
+
+AutoCAD@DESKTOP-93QLT8Q MINGW64 /d/Curso Webmaster/Practica (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+AutoCAD@DESKTOP-93QLT8Q MINGW64 /d/Curso Webmaster/Practica (master)
+$ git push -u origin master
+Logon failed, use ctrl+c to cancel basic credential prompt.
+Username for 'https://github.com': danielzpt
+zap10863
+Counting objects: 21, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (19/19), done.
+Writing objects: 100% (21/21), 909.61 KiB | 19.77 MiB/s, done.
+Total 21 (delta 0), reused 0 (delta 0)
+remote:
+remote: Create a pull request for 'master' on GitHub by visiting:
+remote:      https://github.com/danielzpt/sitio-clase/pull/new/master
+remote:
+To https://github.com/danielzpt/sitio-clase.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+AutoCAD@DESKTOP-93QLT8Q MINGW64 /d/Curso Webmaster/Practica (master)
+$ zap10863
+bash: zap10863: command not found
+
+AutoCAD@DESKTOP-93QLT8Q MINGW64 /d/Curso Webmaster/Practica (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+AutoCAD@DESKTOP-93QLT8Q MINGW64 /d/Curso Webmaster/Practica (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   Site.html
+        modified:   apuntes.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        estilos.css
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+AutoCAD@DESKTOP-93QLT8Q MINGW64 /d/Curso Webmaster/Practica (master)
+$ git add .
+
+AutoCAD@DESKTOP-93QLT8Q MINGW64 /d/Curso Webmaster/Practica (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        modified:   Site.html
+        modified:   apuntes.txt
+        new file:   estilos.css
+
+
+AutoCAD@DESKTOP-93QLT8Q MINGW64 /d/Curso Webmaster/Practica (master)
+$ git commit -m "Agrego la parte primera de CSS"
+[master 084cff9] Agrego la parte primera de CSS
+ 3 files changed, 36 insertions(+)
+ create mode 100644 estilos.css
+
+AutoCAD@DESKTOP-93QLT8Q MINGW64 /d/Curso Webmaster/Practica (master)
+$ git push
+Counting objects: 5, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (5/5), 849 bytes | 141.00 KiB/s, done.
+Total 5 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/danielzpt/sitio-clase.git
+   8a2a357..084cff9  master -> master
+
+AutoCAD@DESKTOP-93QLT8Q MINGW64 /d/Curso Webmaster/Practica (master)
+$
